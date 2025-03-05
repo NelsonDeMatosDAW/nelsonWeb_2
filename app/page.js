@@ -4,7 +4,7 @@ import BannerSection2 from "@/components/sections/BannerSection2"
 import PlansSection1 from "@/components/sections/PlansSection1"
 import ServicesSection1 from "@/components/sections/ServicesSection1"
 import ServicesSection2 from "@/components/sections/ServicesSection2"
-import TeamSection1 from "@/components/sections/TeamSection1"
+import TeamSection1 from "@/components/sections/CvSection1"
 
 export const metadata = {
     title:'NelsonDeMatosDev',

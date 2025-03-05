@@ -66,7 +66,7 @@ export default function BannerSection1() {
                         >
                             {/*Slide Item*/}
                             <SwiperSlide className="slide-item">
-                                <div className="image-layer" style={{ backgroundImage: 'url(images/main-slider/image-1.jpg)' }}>
+                                <div className="image-layer" style={{ backgroundImage: 'url(images/main-slider/sesion_web_dev-1.jpg)' }}>
                                 </div>
                                 <div className="slide-bar" />
                                 <div className="slide-count"><span>01</span></div>
@@ -86,7 +86,7 @@ export default function BannerSection1() {
                             </SwiperSlide>
                             {/*Slide Item*/}
                             <SwiperSlide className="slide-item">
-                                <div className="image-layer" style={{ backgroundImage: 'url(images/main-slider/image-1.jpg)' }}>
+                                <div className="image-layer" style={{ backgroundImage: 'url(images/main-slider/sesion_web_dev-2.jpg)' }}>
                                     <div className="slide-bar" />
                                     <div className="slide-count"><span>02</span></div>
                                     <div className="auto-container">

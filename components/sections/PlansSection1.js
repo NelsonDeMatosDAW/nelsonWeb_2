@@ -11,7 +11,7 @@ export default function PlansSection1() {
 							<div className="inner">
 								<div className="image">
 									<div className="bg-pattern" />
-									<img src="/images/resource/image-1.jpg" alt="" />
+									<img src="/images/main-slider/sesion_web_dev-2.jpg" alt="Programador web León" />
 								</div>
 							</div>
 						</div>

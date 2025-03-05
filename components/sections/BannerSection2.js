@@ -14,7 +14,7 @@ export default function BannerSection1() {
 
     return (
         <>
-            <section className="banner-two" id="to-top-div">
+            <section className="banner-two" id="to-top-div" >
                 <div className="auto-container">
                     <div className="banner-slider owl-theme owl-carousel">
                         <Swiper
@@ -34,7 +34,7 @@ export default function BannerSection1() {
                         >
                             {/*Slide Item*/}
                             <SwiperSlide className="slide-item">
-                                <div className="image-layer" style={{ backgroundImage: 'url(images/main-slider/image-2.jpg)' }} />
+                                <div className="image-layer" style={{ backgroundImage: 'url(images/main-slider/sesion_web_dev-1.jpg)' }} />
                                 <div className="slide-count"><span>01</span></div>
                                 <div className="content-box">
                                     <div className="content">
@@ -47,7 +47,7 @@ export default function BannerSection1() {
                             </SwiperSlide>
                             {/*Slide Item*/}
                             <SwiperSlide className="slide-item">
-                                <div className="image-layer" style={{ backgroundImage: 'url(images/main-slider/image-3.jpg)' }} />
+                                <div className="image-layer" style={{ backgroundImage: 'url(images/main-slider/sesion_web_dev-2.jpg)' }} />
                                 <div className="slide-count"><span>02</span></div>
                                 <div className="content-box">
                                     <div className="content">

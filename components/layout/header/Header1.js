@@ -28,16 +28,15 @@ export default function Header1({ scroll, isMobileMenu, handleClick, isDivActive
                         {/*Social Links*/}
                         <div className="social-links">
                             <ul className="clearfix">
-                                <li><Link href="#"><span className="fab fa-instagram" /></Link></li>
-                                <li><Link href="#"><span className="fab fa-twitter-square" /></Link></li>
-                                <li><Link href="#"><span className="fab fa-facebook-square" /></Link></li>
+                                <li><Link href="https://www.linkedin.com/in/nelsondematos" target="blanck_"><span className="fab fa-linkedin" /></Link></li>
+                                <li><Link href="https://github.com/NelsonDeMatosDAW" target="blanck_"><span className="fab fa-github" /></Link></li>
                             </ul>
                         </div>
                         {/*Copyright Text*/}
-                        <div className="copyright">© Vosio {new Date().getFullYear()}</div>
+                        <div className="copyright">© NelsonDeMatos {new Date().getFullYear()}</div>
                     </div>
                     {/*alt="" Logo Box*/}
-                    <div className="alt-logo-box"><Link href="/"><img src="/images/logo.png" alt="" /></Link></div>
+                    <div className="alt-logo-box"><Link href="/"><img src="/images/nelsondematosdev_blanco.png" alt="" /></Link></div>
                     {/*Nav Bg Box*/}
                     <div className="nav-bg-box" />
                     {/*Main Nav Outer*/}

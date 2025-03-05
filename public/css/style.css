@@ -402,6 +402,8 @@ p{
   -ms-transition:all 0.3s ease;
   -o-transition:all 0.3s ease;
   transition:all 0.3s ease;
+
+  border-radius: 15px;
 }
 
 .btn-style-two span{
@@ -2329,7 +2331,7 @@ form label.error{
   width: 43px;
   height: 38px;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(2, 2, 2, 0.45);
   text-transform: uppercase;
   letter-spacing: 4px;
   border-radius: 0 0 7px 7px;
@@ -2355,7 +2357,7 @@ form label.error{
   font-size: 22px;
   line-height: 30px;
   text-align: center;
-  background: #15181b;
+  background: #15181b77;
   font-family: 'Telegraf_Regular', sans-serif;
   border-radius: 0 0 20px 20px;
   z-index: 3;
@@ -2368,6 +2370,121 @@ form label.error{
 }
 
 /*** 
+
+
+====================================================================
+  Cv Section
+====================================================================
+
+***/
+
+.cv-section{
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.cv-section .image-col{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.cv-section .image-col .inner{
+    position: relative;
+    display: block;
+}
+
+.cv-section .image-col .image{
+    position: relative;
+    display: block;
+    margin-right: 55px;
+    margin-bottom: 45px;
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.80);
+}
+
+.cv-sectionn .image-col .image:before{
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 75px;
+  right: -24px;
+  bottom: -24px;
+  border: 1px solid #d8f744;
+  border-radius: 0 0 20px 20px;
+}
+
+.cv-section .image-col .image .bg-pattern{
+  position: absolute;
+  left: -32px;
+  top: -25px;
+  right: -55px;
+  bottom: -45px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-image: url(../images/background/code-768x384.webp); /* Cambiar la imagen */
+  background-size: 110% 110%;
+}
+
+.cv-section .image-col .image img{
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: 20px 20px 0 20px;
+}
+
+.cv-sectionn .text-col{
+  position: relative;
+}
+
+.cv-section .text-col .inner{
+    position: relative;
+    display: block;
+}
+
+.cv-section .text-col h4{
+  position: relative;
+  font-size: 26px;
+  font-family: 'Gotham_Bold', sans-serif;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.25em;
+  margin: 0 0 20px;
+}
+
+.cv-section .text-col .text{
+  position: relative;
+  font-size: 15px;
+  font-family: 'Gotham_Light', sans-serif;
+  color: rgba(255, 255, 255, 0.40);
+  line-height: 1.6em;
+}
+
+.cv-section .text-col .text p{
+  margin-bottom: 25px;
+}
+
+.cv-section .text-col .text ul{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.cv-section .text-col .text ul li{
+  position: relative;
+  line-height: 26px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.cv-section .text-col .text ul li:before{
+  content: "\f058";
+  font-family: 'Font Awesome 6 Pro';
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 26px;
+  color: #d8f744;
+}
+
+/*
 
 ====================================================================
   Services Two
@@ -6503,3 +6620,163 @@ form label.error{
   .custom-h5-color {
     color: #D8F743;
   }
+
+  /********* boton centrado *********/
+  .center-button {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  /********* courses *********/
+  
+.courses-section{
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.courses-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    url('/images/background/cv.jpg');
+  background-size: 80vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  opacity: 0.05; /* Opacidad de la imagen */
+  transform: translateY(0%); /* Eleva la imagen un 20% */
+  z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+  height: 550px;
+}
+
+.courses-section .image-col{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.courses-section .image-col .inner{
+    position: relative;
+    display: block;
+}
+
+.courses-section .image-col .image{
+    position: relative;
+    display: block;
+    margin-right: 55px;
+    margin-bottom: 45px;
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.80);
+}
+
+.courses-section .image-col .image:before{
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 75px;
+  right: -24px;
+  bottom: -24px;
+  border: 1px solid #d8f744;
+  border-radius: 0 0 20px 20px;
+}
+
+.courses-section .image-col .image .bg-pattern{
+  position: absolute;
+  left: -32px;
+  top: -25px;
+  right: -55px;
+  bottom: -45px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-image: url(../images/background/plans-lines.png);
+  background-size: 100% 100%;
+}
+
+.courses-section .image-col .image img{
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: 20px 20px 0 20px;
+}
+
+.courses-section .text-col{
+  position: relative;
+}
+
+.courses-section .text-col .inner{
+    position: relative;
+    display: block;
+}
+
+.courses-section .text-col h4{
+  position: relative;
+  font-size: 26px;
+  font-family: 'Gotham_Bold', sans-serif;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.25em;
+  margin: 0 0 20px;
+}
+
+.courses-section .text-col .text{
+  position: relative;
+  font-size: 15px;
+  font-family: 'Gotham_Light', sans-serif;
+  color: rgba(255, 255, 255, 0.40);
+  line-height: 1.6em;
+}
+
+.courses-section .text-col .text p{
+  margin-bottom: 25px;
+}
+.courses-section .text-col .text ul{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.courses-section .text-col .text ul li{
+  position: relative;
+  line-height: 26px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.courses-section .text-col .text ul li:before{
+  content: "\f058";
+  font-family: 'Font Awesome 6 Pro';
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 26px;
+  color: #d8f744;
+}
+
+/********* linea de formacion continua *********/
+.text-center {
+  position: relative;
+}
+
+.line-animation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px; /* Grosor de la línea */
+  background-color: #D8F743; /* Color de la línea */
+  animation: animateLine 2s ease-in-out forwards;
+}
+
+@keyframes animateLine {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 100%; /* La línea ocupará el 100% del ancho */
+  }
+}
+
+
+
+

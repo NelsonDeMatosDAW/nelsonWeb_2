@@ -24,7 +24,7 @@ export default function Footer1() {
                 <button className="scroll-top scroll-to-target" onClick={() => scrollToTop()}><span className="icon fa fa-arrow-alt-circle-up" /></button>
                 <div className="footer-inner">
                     <div className="auto-container">
-                        <div className="footer-logo"><Link href="index.html"><img src="/images/logo.png" alt="#" /></Link></div>
+                        <div className="footer-logo"><Link href="index.html"><img src="/images/nelsondematosdev_blanco.png" alt="#" /></Link></div>
                         <div className="info">
                             <div className="row clearfix">
                                 {/*Block direccion*/}
