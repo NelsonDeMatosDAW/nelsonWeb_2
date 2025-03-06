@@ -1,0 +1,43 @@
+[
+        {
+            "id": 1,
+            "title": "Wide Wheelz Shopify Hydrogen",
+            "category": "Full Stack",
+            "image": "/images/project/wide_wheelz.png",
+            "link": "/portfolio-single/1",
+            "description": "Descripción temporal del proyecto"
+        },
+        {
+            "id": 2,
+            "title": "Myc Experience",
+            "category": "Front End",
+            "image": "/images/project/myc.png",
+            "link": "/portfolio-single",
+            "description": "Descripción temporal del proyecto"
+        },
+        {
+            "id": 3,
+            "title": "Groove Call",
+            "category": "Full Stack",
+            "image": "/images/project/groove_call.png",
+            "link": "/portfolio-single",
+            "description": "Descripción temporal del proyecto"
+        },
+        {
+            "id": 4,
+            "title": "Gravity Visuals",
+            "tecnologias": ["React", "SASS", "Bootstrap" ],
+            "category": "Front End",
+            "image": "/images/project/gv.png",
+            "link": "/portfolio-single",
+            "description": "Descripción temporal del proyecto"
+        },
+        {
+            "id": 5,
+            "title": "NelsonDeMatosDesginer",
+            "category": "Full Stack",
+            "image": "/images/project/nelson_dev.png",
+            "link": "/portfolio-single",
+            "description": "Descripción temporal del proyecto"
+        }
+    ]

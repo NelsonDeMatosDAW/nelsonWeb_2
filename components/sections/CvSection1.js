@@ -39,7 +39,9 @@ export default function CvSection1() {
 
 					<div className="row clearfix">
 						<div className="text-col col-lg-12 col-md-12 col-sm-12 center-button">
-							<button className="theme-btn btn-style-two">Descargar CV</button>
+							<a href="/cv/cv_arquitecto_intecca_nelson.pdf" download>
+								<button className="theme-btn btn-style-two">Descargar CV</button>
+							</a>
 						</div>
 					</div>
 				</div>

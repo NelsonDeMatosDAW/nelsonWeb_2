@@ -1,3 +1,5 @@
+//app/layout.js
+
 import { Nunito } from 'next/font/google'
 import '/public/css/animate.css'
 import "/public/css/bootstrap.css"
@@ -17,9 +19,9 @@ const nunito = Nunito({
 })
 export const metadata = {
     title: {
-        template: 'Vosio | %s',
+        template: 'NelsonDeMatos | %s',
         // content:'text/html',
-        default: 'Vosio | React NextJs', // a default is required when creating a template
+        default: 'NelsonDeMatos | React NextJs', // a default is required when creating a template
     },
     name: "Portfolio Personal Nelson de Matos",
     content: "Portfolio Personal Full Stack Developer",

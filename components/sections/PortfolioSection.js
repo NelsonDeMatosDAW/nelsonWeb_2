@@ -1,8 +1,23 @@
+//components/sections/ProtfolioSection.js
+
 'use client'
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 
 export default function PortfolioSection() {
+
+    //Creamos un state para los datos importados
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        // Cargar el archivo JSON desde public/data/
+        fetch('/data/projects.json')
+            .then(response => response.json())
+            .then(data => setProjects(data))
+            .catch(error => console.error("Error loading projects:", error));
+    }, []);
+
     useEffect(() => {
         if (typeof window !== 'undefined') {
             import('mixitup').then((module) => {
@@ -11,6 +26,7 @@ export default function PortfolioSection() {
             }).catch((error) => console.error("MixItUp failed to load:", error));
         }
     }, []);
+
     return (
         <>
             <section className="portfolio-section">
@@ -19,175 +35,48 @@ export default function PortfolioSection() {
                         {/*Filter*/}
                         <div className="gallery-filters centered clearfix">
                             <ul className="filter-tabs filter-btns clearfix">
-                                <li className="filter" data-role="button" data-filter="all">Show All</li>
-                                <li className="filter" data-role="button" data-filter=".branding">Branding</li>
-                                <li className="filter" data-role="button" data-filter=".mockup">Mockups</li>
-                                <li className="filter" data-role="button" data-filter=".website">Websites</li>
-                                <li className="filter" data-role="button" data-filter=".application">Application</li>
-                                <li className="filter" data-role="button" data-filter=".motion">Motion</li>
+                                <li className="filter" data-role="button" data-filter="all">Mostrar todos</li>
+                                <li className="filter" data-role="button" data-filter=".front-end">Front End</li>
+                                <li className="filter" data-role="button" data-filter=".back-end">back End</li>
+                                <li className="filter" data-role="button" data-filter=".full-stack">Full stack</li>
+                                <li className="filter" data-role="button" data-filter=".otros">Otros</li>
                             </ul>
                         </div>
                         <div className="filter-list row clearfix">
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all website application motion col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-24.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>interior</span></div>
-                                            <h5><Link href="/portfolio-single">Influenced by Power</Link></h5>
+
+                            {projects.map((project) => (
+                                <div
+                                    key={project.id}
+                                    className={`portfolio-block mix all ${project.category.toLowerCase().replace(" ", "-")} col-xl-4 col-lg-4 col-md-6 col-sm-12`}
+                                >
+                                    <div className="inner-box">
+                                        <div className="image">
+                                            <img src={project.image} alt={project.title} />
+                                        </div>
+                                        <div className="overlay">
+                                            <div className="more-link">
+                                                <a href={project.link} className="theme-btn">
+                                                    <i className="fa-solid fa-bars-staggered" />
+                                                </a>
+                                            </div>
+                                            <div className="inner">
+                                                <div className="cat">
+                                                    <span>{project.category}</span>
+                                                </div>
+                                                <h5>
+                                                    <Link href={`/portfolio-single/${project.id}`}>{project.title}</Link>
+                                                </h5>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all mockup application col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-25.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>cultural</span></div>
-                                            <h5><Link href="/portfolio-single">Influenced by Power</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all mockup website motion col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-26.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>interior</span></div>
-                                            <h5><Link href="/portfolio-single">Thoughtfully making Space</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all mockup application col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-27.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>flats</span></div>
-                                            <h5><Link href="/portfolio-single">Unique Solution</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all mockup application motion col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-28.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>wood</span></div>
-                                            <h5><Link href="/portfolio-single">Magnificent Assembled</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all branding website motion col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-29.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>exterior</span></div>
-                                            <h5><Link href="/portfolio-single">Innovation in Craft</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all branding mockup website col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-30.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>wood</span></div>
-                                            <h5><Link href="/portfolio-single">Well-simplified design</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all branding mockup motion col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-31.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>metal</span></div>
-                                            <h5><Link href="/portfolio-single">Design your dreams with us</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all branding application motion col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-32.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>exterior</span></div>
-                                            <h5><Link href="/portfolio-single">Level of evolution</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all mockup website application col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-33.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>aluminium</span></div>
-                                            <h5><Link href="/portfolio-single">You bet it looks so good </Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all website application motion col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-34.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>high buildings</span></div>
-                                            <h5><Link href="/portfolio-single">The Joy of Living</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*Portfolio Block*/}
-                            <div className="portfolio-block mix all branding mockup col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div className="inner-box">
-                                    <div className="image"><img src="/images/resource/image-27.jpg" alt="#" /></div>
-                                    <div className="overlay">
-                                        <div className="more-link"><Link href="/portfolio-single" className="theme-btn"><i className="fa-solid fa-bars-staggered" /></Link></div>
-                                        <div className="inner">
-                                            <div className="cat"><span>interior</span></div>
-                                            <h5><Link href="/portfolio-single">The Joy of Living</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
+
+                        
                     </div>
                 </div>
-            </section>
+        </section >
 
         </>
     )

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function PortfolioSingleSection() {
+export default function PortfolioSingleSection({project}) {
     return (
         <>
             <section className="project-details">
@@ -10,23 +10,25 @@ export default function PortfolioSingleSection() {
                             {/*Text Col*/}
                             <div className="text-col col-lg-5 col-md-12 col-sm-12">
                                 <div className="inner">
-                                    <h3>Abstract company branding design</h3>
+                                    <h3>{project.title}</h3> {/* Usamos el título del proyecto */}
+
+                                    <div className="text">{project.category}</div> {/* Descripción del proyecto */}
+
                                     <div className="scope">
-                                        <div className="ttl"><span>Scope</span><i className="fa fa-ellipsis-v" /></div>
+                                        <div className="ttl"><span>Tecno</span><i className="fa fa-ellipsis-v" /></div>
                                         <ul>
-                                            <li>Brand Strategy</li>
-                                            <li>Identity Design</li>
-                                            <li>Website</li>
-                                            <li>Campaigns</li>
+                                            {project.tecnologias.map((tecnologia, index) => (
+                                                <li key={index}>{tecnologia}</li>
+                                            ))}
                                         </ul>
                                     </div>
-                                    <div className="text">Trends and common requests can be utilized to make valuable changes to the way an organization interacts with its team members.</div>
+                                    <div className="text">{project.description}</div> {/* Descripción del proyecto */}
                                 </div>
                             </div>
                             {/*Image Col*/}
                             <div className="image-col col-lg-7 col-md-12 col-sm-12">
                                 <div className="inner">
-                                    <div className="image"><img src="/images/resource/image-35.jpg" alt="" /></div>
+                                    <img src={project.image} alt={project.title} /> {/* Usamos la imagen del proyecto */}
                                 </div>
                             </div>
                         </div>
