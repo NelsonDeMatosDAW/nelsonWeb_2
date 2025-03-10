@@ -1,0 +1,101 @@
+[
+        {
+            "id": 1,
+            "title": "Wide Wheelz Shopify Hydrogen",
+            "tecnologias": ["React", "Hydrogen", "ThailWind","Java Script" ],
+            "category": "Full Stack",
+            "image": "/images/project/wide_wheelz.png",
+            "link": "/portfolio-single/1",
+            "description_corta": "Wide Wheelz Shopify Hydrogen es una web desarrollada para Alwa Marketing, migrando su e-commerce desde una plantilla de Shopify a una solución personalizada con Hydrogen, React y Tailwind CSS. Con este cambio, se mejoró significativamente el diseño, la experiencia de usuario y la velocidad de carga, optimizando el rendimiento de la tienda online.",
+            "description_larga":[
+                "Wide Wheelz Shopify Hydrogen es un proyecto desarrollado para Alwa Marketing, con el objetivo de transformar su tienda online de Shopify en una plataforma más rápida, eficiente y atractiva. Inicialmente, la empresa utilizaba una plantilla estándar y el editor nativo de Shopify, lo que limitaba las posibilidades de personalización y optimización de rendimiento.",
+                "Para solucionar estas limitaciones, se implementó una nueva versión del e-commerce utilizando Hydrogen, el framework de Shopify basado en React, junto con Tailwind CSS para mejorar la apariencia y la adaptabilidad del sitio. Gracias a esta tecnología, se logró un diseño moderno y dinámico que mejora la navegación y la experiencia del usuario.",
+                "Además de los cambios visuales, el rendimiento del sitio se optimizó significativamente, reduciendo los tiempos de carga y mejorando la usabilidad en distintos dispositivos. Esta migración permitió que Wide Wheelz tenga una tienda más escalable, flexible y lista para futuras mejoras, garantizando una experiencia de compra más fluida y atractiva para los clientes."
+            ],
+            "imgs_description":[
+                "/images/resource/image-36.jpg",
+                "/images/resource/image-36.jpg",
+                "/images/resource/image-36.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Myc Experience",
+            "tecnologias": ["React", "SASS", "Bootstrap", "Java Script"],
+            "category": "Front End",
+            "image": "/images/project/myc.png",
+            "link": "/portfolio-single",
+            "description_corta": "Myc Experience es una web diseñada para una empresa de eventos enfocada en el ocio nocturno. Se desarrolló utilizando React, SASS y Bootstrap, logrando un diseño atractivo, moderno y funcional que refleja la energía y exclusividad de sus eventos, manteniendo una navegación sencilla y una experiencia de usuario fluida.",
+            "description_larga":[
+                "Myc Experience es un proyecto web desarrollado para una empresa de eventos especializada en ocio nocturno. La principal necesidad del cliente era contar con una página web visualmente atractiva pero sin perder la sencillez en la navegación, permitiendo a los usuarios encontrar rápidamente información sobre sus eventos y servicios.",
+                "Para lograrlo, se utilizó React como base del desarrollo, junto con SASS y Bootstrap, combinando flexibilidad y rendimiento con un diseño moderno y adaptativo. La interfaz se diseñó pensando en la experiencia del usuario, con una estructura clara y elementos visuales llamativos que transmiten la esencia de la marca.",
+                "El resultado es una web que no solo cumple con los objetivos de la empresa, sino que también optimiza la interacción con su audiencia. Gracias a la tecnología utilizada, la plataforma es rápida, escalable y fácil de mantener, asegurando que Myc Experience pueda seguir evolucionando y ofreciendo una presencia digital alineada con la dinámica de sus eventos."
+            ],
+            "imgs_description":[
+                "/images/single-project/myc/1.png",
+                "/images/single-project/myc/2.png",
+                "/images/single-project/myc/4.png",
+                "/images/single-project/myc/3.png"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Groove Call",
+            "tecnologias": ["React", "CSS", "Bootstrap", "Mongo DB", "Node JS", "Express JS" ],
+            "category": "Full Stack",
+            "image": "/images/project/groove_call.png",
+            "link": "/portfolio-single",
+            "description_corta": "Groove Call es una PWA (Progressive Web App) diseñada para revolucionar la experiencia en discotecas, permitiendo a los asistentes solicitar canciones directamente al DJ. Desarrollada con el stack MERN (MongoDB, Express.js, React.js y Node.js), la aplicación ofrece una interfaz intuitiva y cuenta con roles diferenciados para clientes, DJs y administradores del local. Disponible en groovecall.es, Groove Call sigue evolucionando con nuevas funcionalidades.",
+            "description_larga":[
+                "Groove Call es un ambicioso proyecto que comenzó como mi Trabajo de Fin de Grado, pero que ha seguido evolucionando con nuevas mejoras y funcionalidades. Se trata de una PWA (Progressive Web App) desarrollada con el stack MERN (MongoDB, Express.js, React.js y Node.js), diseñada para transformar la experiencia en discotecas al permitir que los asistentes soliciten sus canciones favoritas directamente al DJ.",
+                "La aplicación ofrece una interfaz sencilla y moderna, optimizada para su uso en móviles y navegadores, facilitando la interacción entre los clientes y el DJ. Además, Groove Call implementa un sistema de roles:Clientes: pueden solicitar canciones de manera rápida y sencilla. DJs: acceden a un panel donde gestionan las solicitudes y el flujo de música en tiempo real. Administradores del local: pueden gestionar accesos, contraseñas y configuración general.",
+                "El proyecto ha sido desplegado en un servidor VPS, utilizando Plesk y Putty para la gestión del entorno, mientras que el back-end funciona como una API en Node.js, accesible a través de diferentes endpoints. La base de datos MongoDB está alojada en un contenedor Docker, lo que permite un despliegue eficiente y escalable. Además, el front-end se ha desarrollado con React y Vite, asegurando una experiencia de usuario fluida y optimizada.",
+                "Groove Call ya está disponible en línea en groovecall.es y puede descargarse para Android e iOS. Este es solo el comienzo: nuevas funcionalidades están en camino para seguir mejorando la experiencia en discotecas. 🚀🎶 ¡Únete a la revolución musical y descárgala ahora!"
+            ],
+            "imgs_description":[
+                "/images/single-project/groovecall/1.png",
+                "/images/single-project/groovecall/2.png",
+                "/images/single-project/groovecall/3.png",
+                "/images/single-project/groovecall/4.png"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Gravity Visuals",
+            "tecnologias": ["React", "SASS", "Bootstrap", "Swiper" ],
+            "category": "Front End",
+            "image": "/images/project/gv.png",
+            "link": "/portfolio-single",
+            "description_corta": "Gravity Visuals es la web de una productora audiovisual en León, diseñada para ser impactante y visualmente atractiva. Desarrollada con React, SASS y Bootstrap, incorpora la librería Swiper para mostrar videos y fotos de manera dinámica, asegurando al mismo tiempo una carga optimizada para una navegación fluida.",
+            "description_larga":[
+                "Gravity Visuals es la web oficial de una productora audiovisual en León, creada para reflejar la esencia de su trabajo con un diseño que destaca por su impacto visual y dinamismo. Al tratarse de una empresa especializada en video y fotografía, la prioridad era desarrollar una plataforma que captara la atención de los visitantes desde el primer momento, mostrando su contenido de manera atractiva y profesional.",
+                "Para lograrlo, se utilizó React como base del desarrollo, acompañado de SASS y Bootstrap, tecnologías que permitieron construir una interfaz moderna y responsive. Además, se implementó la librería Swiper, la cual proporciona transiciones fluidas y dinámicas para la visualización de videos e imágenes, potenciando la experiencia del usuario.",
+                "Uno de los desafíos clave fue la optimización del contenido multimedia, asegurando que los videos y fotos se cargaran de manera eficiente sin comprometer la calidad. Se aplicaron estrategias de carga progresiva y compresión de archivos, evitando tiempos de espera prolongados y garantizando una navegación fluida tanto en dispositivos móviles como en ordenadores.",
+                "El resultado es una web que no solo representa fielmente la identidad de Gravity Visuals, sino que también proporciona una experiencia inmersiva a los visitantes, destacando la calidad y creatividad de la productora."
+            ],
+            "imgs_description":[
+                "/images/resource/image-36.jpg",
+                "/images/resource/image-36.jpg",
+                "/images/resource/image-36.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "NelsonDeMatosDesginer",
+            "tecnologias": ["React", "SASS", "Bootstrap", "Next JS" ],
+            "category": "Full Stack",
+            "image": "/images/project/nelson_dev.png",
+            "link": "/portfolio-single",
+            "description_corta": "NelsonDeMatosDesigner es mi portafolio como desarrollador Full Stack, creado con React, Next.js, SASS y Bootstrap. Presenta un diseño minimalista donde muestro mis proyectos, experiencia y un blog automatizado con Node.js, Express y MongoDB, permitiéndome publicar contenido sobre tecnología de forma dinámica.",
+            "description_larga":[
+                "NelsonDeMatosDesigner es mi portafolio profesional como desarrollador Full Stack, diseñado para mostrar mis proyectos personales, experiencia laboral y conocimientos tecnológicos. La web está construida con React y Next.js, apostando por un diseño minimalista y moderno, donde la navegación es fluida y la información se presenta de manera clara y estructurada.",
+                "Una de las funcionalidades más destacadas es la sección de blog, donde publico artículos sobre temas relevantes en la actualidad tecnológica. Para gestionar este contenido, he desarrollado una API con Node.js y Express.js, conectada a una base de datos MongoDB. Esto me permite crear, almacenar y publicar nuevas entradas de forma dinámica a través de un formulario personalizado en el back-end, asegurando una administración eficiente del blog.",
+                "Gracias a Next.js, la web tiene un excelente rendimiento y carga rápida, mientras que Bootstrap y SASS me han permitido lograr una estética limpia y profesional. Este portafolio no solo refleja mi habilidad técnica y creatividad, sino que también es una plataforma en constante evolución, donde seguiré agregando nuevas funcionalidades y contenido."
+            ],
+            "imgs_description":[
+                "/images/resource/image-36.jpg",
+                "/images/resource/image-36.jpg",
+                "/images/resource/image-36.jpg"
+            ]
+        }
+    ]
