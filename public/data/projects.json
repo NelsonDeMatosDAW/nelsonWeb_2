@@ -74,9 +74,10 @@
                 "El resultado es una web que no solo representa fielmente la identidad de Gravity Visuals, sino que también proporciona una experiencia inmersiva a los visitantes, destacando la calidad y creatividad de la productora."
             ],
             "imgs_description":[
-                "/images/resource/image-36.jpg",
-                "/images/resource/image-36.jpg",
-                "/images/resource/image-36.jpg"
+                "/images/single-project/gravityvisuals/1.png",
+                "/images/single-project/gravityvisuals/2.png",
+                "/images/single-project/gravityvisuals/3.png",
+                "/images/single-project/gravityvisuals/4.png"
             ]
         },
         {
@@ -93,9 +94,10 @@
                 "Gracias a Next.js, la web tiene un excelente rendimiento y carga rápida, mientras que Bootstrap y SASS me han permitido lograr una estética limpia y profesional. Este portafolio no solo refleja mi habilidad técnica y creatividad, sino que también es una plataforma en constante evolución, donde seguiré agregando nuevas funcionalidades y contenido."
             ],
             "imgs_description":[
-                "/images/resource/image-36.jpg",
-                "/images/resource/image-36.jpg",
-                "/images/resource/image-36.jpg"
+                "/images/single-project/nelsondematosdev/1.png",
+                "/images/single-project/nelsondematosdev/2.png",
+                "/images/single-project/nelsondematosdev/3.png",
+                "/images/single-project/nelsondematosdev/4.png"
             ]
         }
     ]

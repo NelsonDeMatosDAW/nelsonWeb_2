@@ -9,6 +9,11 @@
 }
 
 @media only screen and (max-width: 1439px){
+	.main-footer{
+		padding: 70px 0 !important;
+		margin-left: 17%;
+	}
+
 	.banner-section .slide-item h1{
 		font-size: 54px;
 	}
@@ -23,7 +28,7 @@
 	}
 
 	.main-footer .info .text{
-		font-size: 28px;
+		font-size: 20px;
 	}
 
 	.page-title h1{
@@ -109,6 +114,12 @@
 }
 
 @media only screen and (max-width: 1339px){
+
+	.main-footer{
+		padding: 70px 0 !important;
+		margin-left: 17%;
+	}
+
 	.banner-section .slide-item .slide-count{
 		right: 30px;
 		top: 30px;
@@ -123,7 +134,7 @@
 	}
 
 	.main-footer .info .text{
-		font-size: 24px;
+		font-size: 20px;
 	}
 
 	.page-title{
@@ -261,6 +272,11 @@
 }
 
 @media only screen and (max-width: 1199px){
+	.main-footer{
+		padding: 70px 0 !important;
+		margin-left: 17%;
+	}
+
 	.banner-section .slide-item .slide-count{
 		right: 30px;
 		top: 30px;
@@ -589,7 +605,7 @@
 	}
 
 	.main-footer .info .text{
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.main-footer .footer-logo img{
@@ -597,7 +613,8 @@
 	}
 
 	.main-footer{
-		padding: 70px 0;
+		padding: 70px 0 !important;
+		margin-left: 17%;
 	}
 
 	.main-footer .loc-info{
@@ -805,7 +822,7 @@
 	
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 700px){
 	.banner-section .slide-item h1{
 		font-size: 28px;
 	}
@@ -1394,4 +1411,20 @@
 		display: none;
 	}
 
+}
+
+/* Eliminamos el padding de la barra de menu en PC */
+@media only screen and (max-width: 700px){
+	.main-content-container{
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+		padding-left: 0px !important;
+	}
+
+	.main-footer{
+		width: 100%;
+		margin: 0px !important;
+	}
 }

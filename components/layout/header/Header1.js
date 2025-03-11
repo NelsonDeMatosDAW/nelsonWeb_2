@@ -47,7 +47,7 @@ export default function Header1({ scroll, isMobileMenu, handleClick, isDivActive
                             <div className="bottom-bg" />
                             <div className="main-nav-box" data-scrollbar>
                                 {/*Logo Box*/}
-                                <div className="main-logo-box"><Link href="/"><img src="/images/logo.png" alt="" /></Link></div>
+                                <div className="main-logo-box"><Link href="/"><img src="/images/nelsondematosdev_blanco.png" alt="" /></Link></div>
                                 <div className="main-nav">
                                     <ul className="navigation">
                                         <li>
